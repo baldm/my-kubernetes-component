@@ -4,7 +4,24 @@ metadata:
   name: my-kubernetes-component
   annotations:
     backstage.io/kubernetes-id: value
+
+  description: Awesome service for awesome things
+  links:
+      - title: Team Slack Channel
+        url: https://monta-app01.slack.com/archives/C03CWQT78AD
+        type: Slack
+        icon: chat
+      - title: Getting started
+        url: https://github.com/monta-app/template-micronaut/blob/develop/README.md
+        type: Readme
+        icon: github
+      - title: Notion
+        url: https://www.notion.so/montaapp/Platform-services-91089c2bfb9f4425bdab012f530cfc67?pvs=4
+        type: Notion
+        icon: docs
+
 spec:
-  lifecycle: production
-  owner: my-team
   type: service
+  lifecycle: production
+  owner: SRE # your-team
+  system: Platform Team # your-business-unit

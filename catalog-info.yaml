@@ -30,3 +30,19 @@ spec:
   lifecycle: production
   owner: SRE # your-team
   system: Platform # your-business-unit
+---
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: sre
+spec:
+  type: team
+  children: []
+---
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: platform
+  description: all services managed by the platform team
+spec:
+  owner: sre
